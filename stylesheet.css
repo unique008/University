@@ -1,0 +1,84 @@
+html{
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+}
+h1{
+    letter-spacing: 2px;
+    text-align: center;
+}
+body{
+    width: 80%;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin: 0 auto;
+}
+.main-div {
+    /* 法一：两列布局 */
+    /* display: flex;  */
+    /* 项目在交叉轴的起点对齐 */
+    /* align-items: flex-start; */
+
+    display: grid; 
+    /* 法二：两列布局 */
+    grid-template-columns: 80% 20%; 
+    
+}  
+.class-div > div{
+    flex: 1;
+}
+.float-div{
+    float: left;
+    background: yellowgreen;
+    width: 150px;
+    height: 120px;
+    margin-right: 30px;
+}
+.img-fun{
+    width: 100%;
+    height: 100%;
+}
+dt {
+    /* 粘性定位 */
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 1em 0;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 1px 0;
+    line-height: 3;
+    color: black;
+}
+
+a:link{
+    color: #265301;
+}
+a:visited{
+    color: #437A16;
+}
+a:focus{
+    /* border-bottom: 1px solid; */
+    background-attachment: #BAE498;
+}
+a:hover{
+    /* border-bottom: 1px solid; */
+    background: #CDFEAA;
+}
+a:active{
+    background: #265302;
+    color: #CDFEAA;
+}
+.left-p-a{
+    text-decoration: underline;
+}
+
+
+
+
